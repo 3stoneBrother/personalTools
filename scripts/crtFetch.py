@@ -27,6 +27,7 @@ def crtDoamin(domain):
     url = base_url.format(domain)
     subdomains = set()
     user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0'
+    requests.packages.urllib3.disable_warnings()
     req = requests.get(url, headers={'User-Agent': user_agent}, timeout=30,
                        verify=False)  # times out after 30 seconds waiting (Mainly for large datasets)
     if req.status_code == 200:
