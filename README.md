@@ -13,6 +13,7 @@ gongzhonghao.py，会输出公众号的ID，运营的公司名称，公众号简
 功能：自动化生成域名的脑图结构，方便查看分析
 
 ## apk-getLink.sh 自动化提取apk中的域名和链接
-用法：两个参数，第一个是apk的前缀，第二个是linkfinder的目录
-apk-getLink.sh “apk的前缀” $LINKFINDER_ROOT
-依赖：apktool工具，需自行安装；也需要[Linkfinder](https://github.com/GerbenJavado/LinkFinder.git)
+用法：两个参数，第一个是apk的前缀，第二个是linkfinder的目录  
+apk-getLink.sh “apk的前缀” $LINKFINDER_ROOT  
+依赖：apktool工具，需自行安装；也需要[Linkfinder](https://github.com/GerbenJavado/LinkFinder.git)  
+
