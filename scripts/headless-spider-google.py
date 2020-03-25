@@ -68,6 +68,7 @@ def parseHtml(page,isLink):
             if res:
                 print res
         else:
+            parsedUrl = re.sub("&ved=[a-zA-Z_0-9]*", "", parsedUrl)
             print parsedUrl
 
 
@@ -91,9 +92,9 @@ def mainGoogle(keywords,isLink):
             proto, rest = urllib.splittype(parsedUrl)
             res, rest = urllib.splithost(rest)
             if res:
-                res = re.sub("&ved=[a-zA-Z_0-9]*", "", res)
                 print res
         else:
+            parsedUrl = re.sub("&ved=[a-zA-Z_0-9]*", "", parsedUrl)
             print parsedUrl
 
     pageNum = soup.find_all("a",{"class": 'fl'})
